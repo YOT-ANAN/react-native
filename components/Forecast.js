@@ -7,9 +7,9 @@ export default class Forecast extends React.Component {
         <View >
 
             <Text style={styles.display} >{this.props.main}</Text>
-            <Text style={styles.display} >{this.props.description}</Text>
-            <Text style={styles.display} >{this.props.temp}</Text>
-            <Text style={styles.display} >°C</Text>
+            <Text style={styles.display1} >{this.props.description}</Text>
+            <Text style={styles.display} >{this.props.temp}°C</Text>
+            
         </View>
         );
     }
@@ -21,7 +21,14 @@ const styles = StyleSheet.create({
         margin: 10,
         fontSize:25,
         color:'#FFFFFF',
-      }
+    },
+        
+    display1:{
+        margin: 10,
+        fontSize:15,
+        color:'#FFFFFF',    
+        }
+      
  
   });
   

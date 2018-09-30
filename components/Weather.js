@@ -7,14 +7,14 @@ export default class Weather extends React.Component {
         super(props);
         this.state = {
             forecast:{
-                    main: '-', description: '-', temp: 0
+                    main: 'main', description: 'description', temp: 0
             }
         }
     }
   render() {
     return (
         
-      <View >
+      <View>
         <ImageBackground source={require('../bg.jpeg')} style={styles.backdrop} >
             <View style={styles.container} >
             <Text style={styles.display} > { 'Zip code is'} {this.props.zipCode}</Text>
@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems: 'center',
     backgroundColor: 'rgba(0,0,0,4)',
-    opacity:0.3,
-    height:'50%'
+    opacity:0.6,
+    height:'40%'
 
   }, 
   display:{
